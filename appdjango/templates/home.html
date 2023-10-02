@@ -1,0 +1,122 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Atividade I, PROJETO II: SOFTWARE">
+  <title>Miguel Lorenzo Aquino Besouchet Pinheiro</title>
+  <link href="{% static 'static.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 style="text-align:center"><em>NANO「ナノ」</em></h1>
+  <img src="https://jrocknews.com/wp-content/uploads/2021/03/nano-anthesis-solo-2021-1200x800.jpg" alt="Foto da artista NANO para o seu mini-álbum ANTHESIS(2021)" class="center">
+<p class="center">Hana Ishiyama Ohara, mais conhecida como <i>NANO</i> é uma artista nipo-estadunidense nascida em Nova Iorque de Rock e J-POP, cantando em inglês tanto quanto japonês</p>
+<a href="https://open.spotify.com/artist/0mxcC38vLiMEP8g4MVNhO4?si=erpcOsLcQJWqGMv7U1JMNg"title="Página no Spotify da artista" class ="p3">Página no Spotify da artista</a>
+<a href="http://en.nanonano.me/"title="Página no Spotify da artista" class ="p3">Website oficial da artista.</a>
+  
+<p class="center">A artista depois de seu <i>debut</i> em 2012, começou a participar de diversas obras como:</p>
+  
+<!-- <ul class="center">
+<li>"Paralyze:D" música tema do jogo de <a href="https://en.wikipedia.org//wiki/PlayStation_Vita" title="PlayStation Vita">PlayStation Vita</a> <i>Re:Vice[D]</i>.</li>
+<li>"Identity Crisis" e "Restart" para o jogo <i><a href="https://en.wikipedia.org/wiki/Warriors_Orochi" title="Warriors Orochi">Warriors Orochi</a></i>.</li>
+<li>"Mirror, Mirror" para o jogo de  <a href="https://en.wikipedia.org/wiki/PlayStation_Vita" title="PlayStation Vita">PlayStation Vita</a> <i>Bad Apple Wars</i>.</li>
+<li>"Nevereverland", música tema do OVA <i>Ark IX</i>.</li>
+<li>"INFERNO", música tema de Gira Husty do seriado tokusatsu <i><a href="https://en.wikipedia.org/wiki/Ohsama_Sentai_King-Ohger" title="Ohsama Sentai King-Ohger">Ohsama Sentai King-Ohger</a></i>.</li></ul> -->
+<ol class = "center">
+  {% for nanoGames in NanoGames%}
+   <li>{{nanoGames.name}}
+   <a href = "nanoGames/update/{{ nanoGames.id }}"> Atualizar</a>
+   <a href = "nanoGames/delete/{{ nanoGames.id }}"> Remover</a></li>
+  {% endfor %}
+</ol>
+<p class="center">Confira abaixo os seus principais lançamentos juntamente com a sua maior posição no site Oricon, site de statísticas de música do Japão: </p>
+<h6 class="center">Tabela retirada de <a href="https://en.wikipedia.org/wiki/Nano_(singer)">https://en.wikipedia.org/wiki/Nano_(singer)</a></h6>
+<table class="center">
+<tbody><tr>
+<th>Year
+</th>
+<th>Information
+</th>
+<th colspan="1"><a href="https://en.wikipedia.org/wiki/Oricon" title="Oricon">Oricon</a><br> peak position
+</th></tr>
+<tr>
+<td>2012
+</td>
+<td><i><b><a href="http://en.nanonano.me/wiki/Nanoir" class="mw-redirect" title="Nanoir">Nanoir</a></b></i>
+<ul><li>Released: March 14, 2012</li></ul>
+</td>
+<td align="center">12
+</td></tr>
+<tr>
+<td>2013
+</td>
+<td><i><b>N</b></i>
+<ul><li>Released: February 27, 2013</li></ul>
+</td>
+<td align="center">8
+</td></tr>
+<tr>
+<td>2015
+</td>
+<td><i><b>Rock On.</b></i>
+<ul><li>Released: January 28, 2015</li></ul>
+</td>
+<td align="center">6
+</td></tr>
+<tr>
+<td>2017
+</td>
+<td><i><b>The Crossing</b></i>
+<ul><li>Released: May 31, 2017</li></ul>
+</td>
+<td align="center">20
+</td></tr>
+<tr>
+<td>2020
+</td>
+<td><i><b>I</b></i>
+<ul><li>Released: March 18, 2020</li></ul>
+</td>
+<td align="center">58
+</td></tr>
+<tr>
+<td>2021
+</td>
+<td><i><b>ANTHESIS</b></i>
+<ul><li>Released: April 15, 2021</li></ul>
+</td>
+<td align="center">74
+</td></tr>
+<tr>
+<td>2023
+</td>
+<td><i><b>NOIXE</b></i>
+<ul><li>Released: February 8, 2023</li></ul>
+</td>
+<td align="center">—
+</td></tr></tbody></table>
+
+<h4 class="center">Confira abaixo outros artistas japoneses recomendados pelo autor desta página:</h4>
+<!-- <ol class ="center">
+  <li><a href="https://open.spotify.com/track/5bsGv6kAydbH8VTW0xup9D?si=79bb2407bf294de2">ASCA</a></li>
+  <li><a href="https://open.spotify.com/artist/0JQH8OHvGdooprROP18Wg6?si=7b4b431fd456413f">May'n</a></li>
+<li><a href="https://open.spotify.com/artist/7rpKUJ0AnklJ8q9nIPVSpZ?si=i6-aUhpDR7-buecjRxAnyQ">Reol</a></li>
+<li><a href="https://open.spotify.com/artist/1snhtMLeb2DYoMOcVbb8iB?si=4ed8530625a44d35">Kenshi Yonezu</a></li>
+<li><a href="https://open.spotify.com/artist/6whFEcaV75AmQMiwlfaxvc?si=3ZmYea7cTVGkoX70cSHUFQ">QUEEN BEE</a></li>
+</ol> -->
+
+<ol>
+  {% for cantora in Cantoras%}
+   <li>{{cantoras.nome}}
+     <a href = "cantoras/update/{{ cantoras.id }}"> Atualizar</a>
+   <a href = "cantoras/delete/{{ cantoras.id }}"> Remover</a>
+   </li>
+  {% endfor %}
+</ol>
+<a href="/cantoras">Adicionar Cantor</a>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+Você tem certeza que quer remover o artista "{{ cantoras.nome}}"
+<form method = "post">
+  {% csrf_token %}
+  <input type = "submit" name = "confirm" value = "Sim">
+  <input type = "submit" value = "Nao">
+</form>
+
+
+Você tem certeza que quer remover o artista "{{ nanogames.name}}"
+
+<form method = "post">
+  {% csrf_token %}
+  <input type = "submit" name = "confirm" value = "Sim">
+  <input type = "submit" value = "Nao">
+</form>

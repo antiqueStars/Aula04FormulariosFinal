@@ -1,0 +1,41 @@
+<h1>{{ action }}Adicionar Cantor</h1>
+
+<form method = "post">
+  {% csrf_token %}
+  <div>
+    <label>Nome</label>
+    <input name = "nome" value ="{{cantoras.nome}}">
+  </div>
+
+  <div>
+    <label>Instrumento</label>
+    <input name = "instrumento" value ="{{cantoras.instrumento}}">
+  </div>
+
+  <div>
+    <label>Data de Debut</label>
+    <input type = "date" name = "debut_date" value ="{{cantoras.debut_date}}">
+  </div>
+
+  <input type="submit" value = "Registrar">
+</form>
+
+<form method = "post">
+  {% csrf_token %}
+  <div>
+    <label>Nome</label>
+    <input name = "nome" value ="{{cantoras.nome}}">
+  </div>
+
+  <div>
+    <label>Release</label>
+    <input type = "date" name = "release" value ="{{nanoGames.release}}">
+  </div>
+
+  <div>
+    <label>Plataforma</label>
+    <input name = "platform" value ="{{nanoGames.platform}}">
+  </div>
+
+  <input type="submit" value = "Registrar">
+</form>
